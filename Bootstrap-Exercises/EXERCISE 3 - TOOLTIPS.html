@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Bootstrap 3 Javascript exercises!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <style type="text/css">
+            .solution{
+              padding: 10px;
+              border-radius: 10px;
+              background-color: #FFF4B3;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#modal2-open-btn").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+                $(".modal2-close").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+
+                $('[data-toggle="tooltip"]').tooltip();   //use the proper bootstrap funtion here
+
+                $('[data-toggle="popover"]');   //use the proper bootstrap funtion here
+            });
+
+
+        </script>
+
+
+    </head>
+    <body>
+
+
+        <!-- EXERCISE 3 - TOOLTIPS -->
+
+        <div id="tool-tip" class="container">
+            <h3>Tooltip Exercise</h3>
+            <p>Check the JavaScript at the top of the code to make sure these tootips work.</p>
+            <ul class="list-inline">
+                <li><a href="#tool-tip" data-toggle="tooltip" data-placement="top" title="Hooray!">Top</a></li>
+                <li><a href="#tool-tip" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Bottom</a></li>
+                <li><a href="#tool-tip" data-toggle="tooltip" data-placement="left" title="Hooray!">Left</a></li>
+                <li><a href="#tool-tip" data-toggle="tooltip" data-placement="right" title="Hooray!">Right</a></li>
+            </ul>
+        </div>
+
+    </body>
+</html>

@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EXERCISE 2 - MODAL THROUGH JAVASCRIPT</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <style type="text/css">
+            .solution{
+              padding: 10px;
+              border-radius: 10px;
+              background-color: #FFF4B3;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#myBtn").click(function(){
+                    $("#modal1").modal("show");   //use the proper bootstrap funtion here
+                });
+
+                $(".modal2-close").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+
+                $('[data-toggle="tooltip"]');   //use the proper bootstrap funtion here
+
+                $('[data-toggle="popover"]');   //use the proper bootstrap funtion here
+            });
+
+
+        </script>
+
+    </head>
+    <body>
+
+
+        <!-- EXERCISE 2 - MODAL THROUGH JAVASCRIPT -->
+
+            <p>Check the Javascript on top of this code and amend it.</p>
+            <!-- Button HTML (to Trigger Modal 2) -->
+            <a href="#modal2" id="modal2-open-btn" class="btn btn-lg btn-primary">Don't change me but make me interactive.</a>
+            
+            <!-- Modal 2 HTML -->
+            <div id="modal2" class="modal fade">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close modal2-close" aria-hidden="true">&times;</button>
+                            <h4 class="modal-title">And another one bites the dust!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>As previously, make sure the &times; on the top right and the button on the bottom of this modal close it. (Remember to do it using JavaScript.)
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-default btn-danger modal2-close">Same thing for me to close.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+<br>
+            <div class="container">
+            
+           
+            <!-- Button HTML (to Trigger Modal 1) -->
+            <button type="button" class="btn btn-info btn-lg" id="myBtn">Change me to have the modal pop up.</button>
+            
+            <!-- Modal 1 HTML -->
+            <div id="modal1" class="modal fade" role="dialog">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h4 class="modal-title">Step one, done!</h4>
+                        </div>
+                        <div class="modal-body">
+                            <p>You can close this modal either using the button on the bottom or the &times; on the top right, make sure both work properly. (FYI you can also just click outside of a modal to have it close.)
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-danger btn-default" data-dismiss="modal" id="cl">Now change me to have this modal close.</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+    </body>
+</html>

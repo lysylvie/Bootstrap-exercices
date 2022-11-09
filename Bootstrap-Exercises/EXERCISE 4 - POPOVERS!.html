@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>EXERCISE 4 - POPOVERS!</title>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+        <style type="text/css">
+            .solution{
+              padding: 10px;
+              border-radius: 10px;
+              background-color: #FFF4B3;
+            }
+        </style>
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+        <!-- JavaScript Part -->
+
+        <script type="text/javascript">
+            $(document).ready(function(){
+                $("#modal2-open-btn").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+                $(".modal2-close").click(function(){
+                    $("#modal2");   //use the proper bootstrap funtion here
+                });
+
+
+                $('[data-toggle="tooltip"]');   //use the proper bootstrap funtion here
+
+                $('[data-toggle="popover"]').popover();   //use the proper bootstrap funtion here
+            });
+
+
+        </script>
+
+
+    </head>
+    <body>
+
+        
+
+
+
+
+        <!-- EXERCISE 4 - POPOVERS! -->
+
+        <div id="pop-over" class="container">
+            <h3>Popover Exercise</h3>
+            
+            <a href="#pop-over" title="Header" data-toggle="popover" data-content="Some content">Click Me</a><br>
+            <a href="#pop-over" title="Header" data-toggle="popover" data-trigger="hover" data-content="Some content">Hover over me</a>
+
+ 
+
+        </div>
+
+
+    </body>
+</html>
